@@ -4,7 +4,7 @@
 
 在 KnowStreaming 中(下面简称KS)，Task模块主要是用于执行一些周期任务，包括Cluster、Broker、Topic等指标的定时采集，集群元数据定时更新至DB，集群状态的健康巡检等。在KS中，与Task模块相关的代码，我们都统一存放在km-task模块中。
 
-Task模块是基于 LogiCommon 中的Logi-Job组件实现的任务周期执行，Logi-Job 的功能类似 XXX-Job，它是 XXX-Job 在 KnowStreaming 的内嵌实现，主要用于简化 KnowStreaming 的部署。
+Task模块是基于 LogiCommon 中的Logi-Job组件实现的任务周期执行，Logi-Job 的功能类似 XXL-JOB，它是 XXL-JOB 在 KnowStreaming 的内嵌实现，主要用于简化 KnowStreaming 的部署。
 Logi-Job 的任务总共有两种执行模式，分别是：
 
 + 广播模式：同一KS集群下，同一任务周期中，所有KS主机都会执行该定时任务。
